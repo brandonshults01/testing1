@@ -1,0 +1,9 @@
+packaging youtube: https://youtu.be/kN1Czs0m1SU
+
+packager: https://www.christianengvall.se/electron-packager-tutorial/
+
+
+Linux: 
+npm run package-linux
+electron-installer-debian --src release-builds/XPhase-Communicator-app-linux-x64/ --arch amd64 --config debian.json
+

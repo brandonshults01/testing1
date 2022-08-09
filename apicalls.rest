@@ -1,0 +1,25 @@
+GET http://apitestserver.xphasenetwork.net:6098
+
+####
+GET http://192.168.86.167:6098/version
+
+
+
+#### curl -d '{"name":"john", "password":"secretPassword"}' -H "Content-Type: application/json" -X POST http://192.168.86.167:6098/login
+POST http://192.168.86.167:6098/login
+Content-Type: application/json
+
+{
+    "name":"john",
+    "password":"secretPassword"
+}
+
+####
+GET http://192.168.86.167:6098/logout
+Content-Type: application/json
+
+####
+
+
+####
+GET http://192.168.86.167:6098/users

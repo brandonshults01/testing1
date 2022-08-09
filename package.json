@@ -1,0 +1,30 @@
+{
+  "name": "xphase_companion",
+  "productName": "XPhaseCompanion",
+  "executableName": "XPhaseCompanion",
+  "version": "2022.01.17",
+  "description": "XPhase User Interface",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . --overwrite --asar --platform=win32 --arch=x64 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds",
+    "package-linux": "electron-packager . XPhase-app --overwrite --asar --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron-json-storage": "^4.3.0",
+    "electron-localshortcut": "^3.2.1",
+    "electron-store": "^6.0.1"
+  },
+  "devDependencies": {
+    "electron": "^11.5.0",
+    "electron-packager": "^15.4.0",
+    "uaup-js": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://brandonshults01@104.207.156.146/brandonshults01/hcghUserInterface.git"
+  }
+}
